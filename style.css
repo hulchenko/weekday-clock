@@ -113,3 +113,27 @@ span {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 900px) {
+  html {
+    overflow: hidden;
+  }
+  .week {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px 30px 30px;
+    width: 400px;
+  }
+  .week p {
+    font-size: 15px;
+    justify-self: center;
+  }
+
+  #Sunday {
+    grid-column: 1/4;
+  }
+
+  .clock {
+    font-size: 50px;
+  }
+}
