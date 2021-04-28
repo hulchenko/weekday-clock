@@ -6,12 +6,14 @@
   overflow-x: none;
 }
 
-html {
+body {
+  background-color: #111;
+  max-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #111;
-  height: 100vh;
+  width: 100%;
 }
 
 .container {
@@ -19,12 +21,14 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
-  margin-top: -200px;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .week {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .week p {
@@ -38,8 +42,10 @@ html {
   display: flex;
   font-size: 120px;
   font-weight: bold;
-  width: 800px;
+  width: 100%;
   padding-top: 50px;
+  justify-content: center;
+  align-items: center;
 }
 
 span {
@@ -118,18 +124,19 @@ span {
   html {
     overflow: hidden;
   }
+
   .week {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 30px 30px 30px;
     width: 400px;
   }
+
   .week p {
     font-size: 15px;
-    justify-self: center;
   }
 
-  #Sunday {
+  #saturday {
     grid-column: 1/4;
   }
 

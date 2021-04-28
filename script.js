@@ -9,7 +9,7 @@ const twentyFour = document.querySelector('.twenty-four');
 let displayTwelve = true;
 
 //Set highlighted day
-days[today - 1].classList.add('day'); //Monday - Sunday week
+days[today].classList.add('day');
 
 function showTime() {
   let date = new Date();
