@@ -3,7 +3,7 @@
 * {
   font-family: 'Electrolize', sans-serif;
   user-select: none;
-  overflow-x: none;
+  overflow: hidden;
 }
 
 body {
